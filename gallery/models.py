@@ -6,3 +6,18 @@ class Photos(models.Model):
     photo_description = models.TextField()
     photo_location = models.ForeignKey('Location', on_delete=models.SET_NULL, default = '', null=True)
     photo_category = models.ForeignKey('Category', on_delete=models.CASCADE, default='')
+
+    def __str__(self):
+        return self.name
+
+class Location(models.Model):
+    location_name = models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.location_name
+
+class Category(models.Model):
+    Category_name = models.CharField(max_length = 30)
+
+    def __str__(self):
+        return self.category_name                
