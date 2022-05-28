@@ -7,7 +7,7 @@ class Photos(models.Model):
     photo_location = models.ForeignKey('Location', on_delete=models.SET_NULL, default = '', null=True)
     photo_category = models.ForeignKey('Category', on_delete=models.CASCADE, default='')
     pub_date = models.DateTimeField(auto_now_add=False,auto_now=True)
-    photo = models.ImageField(upload_to = 'pictures/', default='image.jpg')
+    photo = models.ImageField(upload_to = 'pictures/')
 
     def save_photo(self):
         self.save()
