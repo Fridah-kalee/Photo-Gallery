@@ -3,4 +3,5 @@ from . import views
 
 urlpatterns=[
     re_path('^$',views.home,name = 'home'),
+    re_path('photos/',views.photos,name='photos')
 ]
