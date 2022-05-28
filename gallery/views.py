@@ -3,9 +3,9 @@ from django.shortcuts import render,redirect
 from .models import Photos
 
 # Create your views here.
-def home(request):
-    return render(request,"home.html")
+# def home(request):
+#     return render(request,"home.html")
 
-def photos(request):
+def home(request):
     photo = Photos.objects.all()
-    return render(request,'photo.html',{"photo": photo}) 
+    return render(request,'home.html',{"photo": photo}) 
