@@ -15,6 +15,11 @@ class Photos(models.Model):
     def delete_photo(self):
         self.save()
 
+    @classmethod
+    def search_by_photo_category(cls,search_term):
+        photo = cls.objects.filter(name__icontains = search_term)
+        return photo   
+
     def __str__(self):
         return self.name
 
