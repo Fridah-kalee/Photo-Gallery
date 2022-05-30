@@ -5,6 +5,7 @@ Fridah-kalee
 ## Setup and installations
 * Git clone https://github.com/Fridah-kalee/Photo-Gallery.git to your machine
 * Create virtual environment:
+
   $ python3.9 -m venv virtual
 * Activate a virtual environment on terminal:
   $ source virtual/bin/activate
