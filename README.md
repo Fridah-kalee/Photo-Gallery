@@ -6,20 +6,27 @@ Fridah-kalee
 * Git clone https://github.com/Fridah-kalee/Photo-Gallery.git to your machine
 * Create virtual environment:
 
-  $ python3.9 -m venv virtual
+    $ python3.9 -m venv virtual
 * Activate a virtual environment on terminal:
-  $ source virtual/bin/activate
+
+    $ source virtual/bin/activate
 * Install all the requirements found in requirements.txt file.
-  $ pip freeze > requirements.txt
+
+    $ pip freeze > requirements.txt
 * On your terminal run command.
-  $ python3.9 manage.py runserver
+
+    $ python3.9 manage.py runserver
 * Access the live site using the local host provided.
-  $ open localhost:8000
+
+    $ open localhost:8000
 * Create database migrations
-  $ python3 manage.py makemigrations gallery
-  $ python3 manage.py migrate
+
+    $ python3 manage.py makemigrations gallery
+
+    $ python3 manage.py migrate
 * Run tests
-  $ python3 manage.py test  
+
+    $ python3 manage.py test  
 ## Setting up environment variables
 SECRET_KEY= #secret key will be added by default
     DEBUG= #set to false in production
