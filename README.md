@@ -29,12 +29,19 @@ Fridah-kalee
     $ python3 manage.py test  
 ## Setting up environment variables
 SECRET_KEY= #secret key will be added by default
+
     DEBUG= #set to false in production
+
     DB_NAME= #database name
+
     DB_USER= #database user
+
     DB_PASSWORD=#database password
+
     DB_HOST="127.0.0.1"
+
     MODE= # dev or prod , set to prod during production
+    
     ALLOWED_HOSTS='.localhost', '.herokuapp.com', '.127.0.0.1'
 ## User stories 
 As a user i want to be able to:
